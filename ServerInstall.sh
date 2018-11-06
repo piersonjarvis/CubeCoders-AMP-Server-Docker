@@ -10,12 +10,12 @@ sudo apt-get install docker-compose
 wget https://github.com/piersonjarvis/CubeCoders-AMP-Server-Docker/archive/master.zip
 unzip master.zip
 rm -r master.zip
-#mv master Server
+mv CubeCoders-AMP-Server-Docker-master Server
 read newkey
 read newuser
 read newpassword
 echo "\$key=$newkey" >> ./Server/.env
 echo "\$username=$newuser" >> ./Server/.env
 echo "\$password=$newpassword" >> ./Server/.env
-#cd Server
+cd Server
 sudo docker-compose up -d
