@@ -2,7 +2,7 @@
 sudo apt-get update && apt-get upgrade
 sudo apt-get install unzip wget
 sudo mkdir /home/minecraft
-chown minecraft $USER:$USER
+chown $USER:$USER /home/minecraft
 curl -fsSL get.docker.com | sh 
 wait
 sudo usermod -aG docker $USER
