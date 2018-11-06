@@ -6,7 +6,7 @@ sudo chown $USER:$USER /home/minecraft
 curl -fsSL get.docker.com | sh 
 wait
 sudo usermod -aG docker $USER
-sudo apt-get install docker-compose
+sudo apt-get install docker-compose -y
 wget https://github.com/piersonjarvis/CubeCoders-AMP-Server-Docker/archive/master.zip
 unzip master.zip
 rm -r master.zip
