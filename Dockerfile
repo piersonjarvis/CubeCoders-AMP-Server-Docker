@@ -2,8 +2,8 @@ FROM ubuntu
 
 EXPOSE 8080 19132 25565 27015 7777 7778 27020
 
-RUN apt-get update && apt-get upgrade && \
-apt-get install lib32gcc1 lib32stdc++6 coreutils screen tmux socat unzip git wget libsqlite3-dev default-jre && \
+RUN apt-get update && apt-get upgrade -y && \
+apt-get install lib32gcc1 lib32stdc++6 coreutils screen tmux socat unzip git wget libsqlite3-dev default-jre -y && \
 useradd -d /home/AMP -m AMP && echo AMP:AMP | chpasswd
 
 RUN mkdir /home/AMP/AMP && cd /home/AMP/AMP
