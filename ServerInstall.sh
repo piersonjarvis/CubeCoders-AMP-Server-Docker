@@ -14,8 +14,9 @@ mv CubeCoders-AMP-Server-Docker-master Server
 read newkey
 read newuser
 read newpassword
-echo "\$key=$newkey" >> ./Server/.env
-echo "\$username=$newuser" >> ./Server/.env
-echo "\$password=$newpassword" >> ./Server/.env
 cd Server
+touch .env
+echo "\$key=$newkey" >> .env
+echo "\$username=$newuser" >> .env
+echo "\$password=$newpassword" >> .env
 sudo docker-compose up -d
