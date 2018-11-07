@@ -4,7 +4,6 @@ services:
   amp-server:
     image: amp-server
     restart: always
-    build: .
     ports:
       - 8080-8180:8080-8180
       - 25565:25565
