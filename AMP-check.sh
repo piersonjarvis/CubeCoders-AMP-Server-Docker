@@ -1,7 +1,8 @@
 #!/bin/bash
 apt-get update && apt-get upgrade  -y
 wait
-su AMP /home/AMP/AMP/ampinstmgr -a 
+cd /home/AMP/AMP
+su AMP -c "./ampinstmgr -a"
 while true
 do
 if [[ $(su AMP bash /home/AMP/AMP/ampinstmgr -l) = *Running*yes* ]]
