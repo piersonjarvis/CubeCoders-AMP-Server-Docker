@@ -14,5 +14,5 @@ WORKDIR /home/AMP/AMP
 
 RUN wget http://cubecoders.com/Downloads/ampinstmgr.zip  && \
 unzip ampinstmgr.zip && rm -i ampinstmgr.zip && \
-su AMP -c "./ampinstmgr -quick admin admin 0.0.0.0 8080"
+su AMP -c "./ampinstmgr -quick admin password 0.0.0.0 8080"
 CMD [ "/bin/bash","/AMP-check.sh" ]
