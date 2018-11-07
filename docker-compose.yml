@@ -4,6 +4,7 @@ services:
   amp-server:
     image: amp-server
     restart: always
+    container_name: amp
     volumes:
       - /home/minecraft:/home/AMP/AMP/minecraft
     ports:
