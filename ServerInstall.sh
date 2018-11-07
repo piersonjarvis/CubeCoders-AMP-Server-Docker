@@ -12,10 +12,10 @@ unzip master.zip
 rm -r master.zip
 mv CubeCoders-AMP-Server-Docker-master Server
 cd Server
-read -p "Enter AMP key:" newkey;
-read -p "Enter new AMP username:" newuser;
-read -p "Enter new AMP password:" newpassword;
+read -pr "Enter AMP key:" newkey;
+read -pr "Enter new AMP username:" newuser;
+read -pr "Enter new AMP password:" newpassword;
 touch .env
-{echo "\$key=$newkey"; echo "\$password=$newpassword"; echo "\$username=$newuser";} >> .env
+{ echo "\$key=$newkey"; echo "\$password=$newpassword"; echo "\$username=$newuser"; } >> .env
 sudo docker build -q -t amp-server .
 sudo docker-compose up -d
