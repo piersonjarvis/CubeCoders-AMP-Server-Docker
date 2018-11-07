@@ -22,4 +22,5 @@ touch .env
 echo "\$key=$newkey" >> .env
 echo "\$username=$newuser" >> .env
 echo "\$password=$newpassword" >> .env
+sudo docker build .
 sudo docker-compose up -d
