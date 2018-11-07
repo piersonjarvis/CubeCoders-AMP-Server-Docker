@@ -11,8 +11,11 @@ wget https://github.com/piersonjarvis/CubeCoders-AMP-Server-Docker/archive/maste
 unzip master.zip
 rm -r master.zip
 mv CubeCoders-AMP-Server-Docker-master Server
+echo "Enter AMP key"
 read newkey
+echo "Enter new AMP username"
 read newuser
+echo "Enter new AMP password"
 read newpassword
 cd Server
 touch .env
