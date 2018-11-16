@@ -8,7 +8,7 @@ RUN apt-get update && apt-get upgrade -y && \
 apt-get install lib32gcc1 lib32stdc++6 coreutils screen tmux socat unzip git wget libsqlite3-dev openjdk-8-jre-headless -y && \
 useradd -d /home/AMP -m AMP && echo AMP:AMP | chpasswd && \
 mkdir /config && \
-ln -s /home/AMP/.ampdata/.instances/Minecraft01 /config
+ln -s /home/AMP/.ampdata/.instances /config
 
 RUN mkdir /home/AMP/AMP && cd /home/AMP/AMP
 
