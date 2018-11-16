@@ -6,7 +6,7 @@ services:
     restart: always
     container_name: amp
     volumes:
-      - /home/minecraft:/home/AMP/.ampdata/.instances/Minecraft01
+      - /home/minecraft:/config
     ports:
       - 8080-8180:8080-8180
       - 25565:25565
