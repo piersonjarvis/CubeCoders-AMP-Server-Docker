@@ -1,6 +1,7 @@
 #!/bin/bash
 apt-get update && apt-get upgrade  -y
 wait
+unison -batch /home/AMP/.ampdata/.instances /config
 cd /home/AMP/AMP
 su AMP -c "./ampinstmgr -a"
 while true
