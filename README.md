@@ -8,6 +8,6 @@ Just copy and paste whichever method you prefer into you command terminal and fo
 
 1) curl https://raw.githubusercontent.com/piersonjarvis/CubeCoders-AMP-Server-Docker/master/ServerInstall.sh | sh
 
-2) curl https://raw.githubusercontent.com/piersonjarvis/CubeCoders-AMP-Server-Docker/master/CustomServerInstall.sh && chmod 755 CustomServerInstall.sh && ./CustomServerInstall.sh
+2) curl https://raw.githubusercontent.com/piersonjarvis/CubeCoders-AMP-Server-Docker/master/CustomServerInstall.sh -o CustomServerInstall.sh && chmod 755 CustomServerInstall.sh && sudo ./CustomServerInstall.sh
 
 Instance files are stored under /config
