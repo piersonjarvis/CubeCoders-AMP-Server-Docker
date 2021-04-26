@@ -8,12 +8,12 @@ sudo apt-get install docker-compose -y
 newdir=$(dialog --stdout --title "Config Directory" --inputbox "Please enter mount point for managing config files:" 0 0)
 sudo mkdir $newdir
 sudo chown "$USER":"$USER" $newdir
-sed -e s/\/home\/minecraft/$newdir/g -i Dockerfile
 wget https://github.com/piersonjarvis/CubeCoders-AMP-Server-Docker/archive/master.zip
 unzip master.zip
 rm -r master.zip
 mv CubeCoders-AMP-Server-Docker-master Server
 cd Server
+sed -e s/\/home\/minecraft/$newdir/g -i Dockerfile
 newkey=$(dialog --stdout --title "amp key" --inputbox "Please enter amp server key:" 0 0)
 #read -pr "Enter AMP key:" newkey;
 newuser=$(dialog --stdout --title "Username" --inputbox "Please enter new username:" 0 0)
